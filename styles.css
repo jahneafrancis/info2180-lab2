@@ -1,0 +1,136 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    font-size: 36px;
+}
+h2{
+    font-size: 32px;
+    color: #48BB78;
+}
+h3{
+    color: #48BB78;
+}
+.date{
+    margin-top: 8px;
+    color: #718096;
+}
+.container{
+    width:100vw;
+    font-size: 18px;
+    color:#2D3748 ;
+    font-family: sans-serif;
+    /* padding-left:64px;
+    padding-right: 64px; */
+    display: grid;
+    grid-template-areas:
+    'header header header header header header'
+    'main main main main right right'
+    'footer footer footer footer footer footer';
+    gap: 10px;
+}
+.side-bar{
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    grid-area:right;
+    height: 80vh;
+    padding-right: 64px;
+    padding-left: 16px;
+}
+.about{
+    padding: 12px 12px 12px 12px;
+    background-color: #E2E8F0;
+    height: 30%;
+}
+.about h3{
+    margin-bottom:10px ;
+}
+.socials{
+    height: 30%;
+}
+
+.archives{
+    height: 30%;
+}
+.socials ul{
+    padding-left:8px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap:8px;
+    list-style: none;
+}
+.archives ul{
+    padding-left:8px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap:8px;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color:#4299E1;
+}
+.blogs{
+    grid-area:main;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 80vh;
+    width: 70vw;
+    gap: 10px;
+    padding-left:64px;
+    margin-top: 32px;
+    /* margin-right: 32px; */
+    
+}
+article{
+    height: 50%;
+    width: 100%;
+
+}
+#profile-photo{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 16px;
+}
+header{
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    grid-area: header;
+    background-color: #63B3ED;
+    color: white;
+}
+.blog-photo{
+    display: flex;
+    height: 100px;
+    width: 100%;
+    gap: 30px;
+}
+.blog-box{
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+footer{
+    grid-area: footer;
+    background-color: #2C5282 ;
+    color: #FFFFFF;
+    height: 10vh;
+    padding-left: 128px;
+    display: flex;
+    align-items: center;
+}
